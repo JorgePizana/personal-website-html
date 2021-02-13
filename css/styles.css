@@ -1,0 +1,114 @@
+@import url('../css/fonts.css');
+
+html, body {
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root{
+    /*theme colors*/
+    --text-gray: #3f4954;
+    --text-light: #686666da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --midnight:  #104f55;
+    --lava: #fda34b;
+
+    /*gradient color*/
+    --blue-lava: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
+    /*theme font-family*/
+    --Abel: 'Abel', cursive;
+    --Arvo: 'Arvo', cursive;
+    --Josefin: 'Josefin', cursive;
+    --Lexend: 'Lexend', cursive;
+    --Livvic: 'Livvic', cursive;
+}
+
+
+/*------------Global Classes--------------*/
+
+a{
+    text-decoration: none;
+    color: var(--text-gray);
+    
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /*prevents the icons to move vertically if the window is very small*/
+}
+
+ul{
+    list-style-type: none; /*removes the list icons*/
+}
+
+/*----x-------Global Classes-------x------*/
+
+/*------------navbar--------------*/
+
+.nav{
+    background: white;
+    padding: 0 2rem; /*1rem = 16px, 0 for top & bottom padding, 2 for left & right padding*/
+    height: 0rem;
+    min-height: 40vh; /*viewport height 1vh = 1% of the viewport height*/
+    overflow: hidden;
+}
+
+.nav .nav-menu{
+    justify-content: space-between;
+}
+
+.nav .nav-items{
+
+    display: flex;
+    margin: 0;
+}
+
+.nav .nav-items .nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: var(--Abel);
+}
+
+.nav .nav-items .nav-link:hover{
+    background-color: var(--midnight);
+}
+.nav .nav-items .nav-link:hover a{
+    color: var(--white);
+}
+
+.nav .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+    font-family: var(--Lexend);
+    font-size: 1.6rem;
+
+}
+
+.nav .social{
+    padding: 1.4rem 0;
+}
+.nav .social i{
+    padding: 0.2rem;
+}
+.nav .social i:hover{
+    color: var(--lava);
+}
+/*-----x------navbar-------x------*/
+
+
+/*------------Viewport less than or equal to 750px--------------*/
+/*so the screen can be responsive*/
+
+@media only screen and (max-width: 750px){
+    .nav .nav-menu{
+        flex-direction: column;
+    }
+}
+
+/*----x-------Viewport less than or equal to 750px-------x-------*/
+
