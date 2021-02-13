@@ -52,13 +52,33 @@ ul{
     background: white;
     padding: 0 2rem; /*1rem = 16px, 0 for top & bottom padding, 2 for left & right padding*/
     height: 0rem;
-    min-height: 40vh; /*viewport height 1vh = 1% of the viewport height*/
+    min-height: 10vh; /*viewport height 1vh = 1% of the viewport height*/
     overflow: hidden;
 }
 
 .nav .nav-menu{
     justify-content: space-between;
 }
+
+.nav .toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+    color: var(--text-gray);
+}
+
 
 .nav .nav-items{
 
@@ -107,6 +127,10 @@ ul{
 @media only screen and (max-width: 750px){
     .nav .nav-menu{
         flex-direction: column;
+    }
+
+    .nav .toggle-collapse{
+        display: initial;
     }
 }
 
