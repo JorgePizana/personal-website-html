@@ -54,6 +54,7 @@ ul{
     height: 0rem;
     min-height: 10vh; /*viewport height 1vh = 1% of the viewport height*/
     overflow: hidden;
+    transition: height 0.4s ease-in-out;
 }
 
 .nav .nav-menu{
@@ -77,6 +78,10 @@ ul{
 .nav .toggle-collapse .toggle-icons i{
     font-size: 1.4rem;
     color: var(--text-gray);
+}
+
+.collapse{
+    height: 35rem;
 }
 
 
@@ -125,7 +130,7 @@ ul{
 /*so the screen can be responsive*/
 
 @media only screen and (max-width: 750px){
-    .nav .nav-menu{
+    .nav .nav-menu, .nav .nav-items{
         flex-direction: column;
     }
 
