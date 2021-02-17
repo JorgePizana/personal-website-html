@@ -14,9 +14,10 @@ html, body {
     --white: #ffffff;
     --midnight:  #104f55;
     --lava: #fda34b;
-
+    
     /*gradient color*/
-    --blue-lava: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
+    /*--blue-lava: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);*/
+    --orange-button: #ffc478 90%;
     /*theme font-family*/
     --Abel: 'Abel', cursive;
     --Arvo: 'Arvo', cursive;
@@ -42,6 +43,29 @@ a{
 
 ul{
     list-style-type: none; /*removes the list icons*/
+}
+
+h1{
+    font-family: var(--Lexend);
+    font-size: 3rem;
+}
+
+h2{
+    font-family: var(--Lexend);
+
+}
+
+h3{
+    font-family: var(--Abel);
+    font-size: 1.5rem;
+}
+
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Livvic);
 }
 
 /*----x-------Global Classes-------x------*/
@@ -124,6 +148,51 @@ ul{
     color: var(--lava);
 }
 /*-----x------navbar-------x------*/
+
+/*------------Main Site--------------*/
+
+    /*------------site title--------------*/
+
+    main .site-title{
+        background-image: url('../assets/background-image.jpg');
+        background-size: cover;
+        height: 120vh;
+        display: flex;
+        justify-content: center;
+        padding-top: 10rem;
+    }
+    
+    main .site-title .site-background{
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0, 0.3); /* Black w/opacity/see-through */
+        width: 70%;
+        position: absolute;
+        padding: 2rem;
+        text-align: center;
+        color: var(--white);
+    }
+
+    main .site-title h1, h3{
+        margin: .5rem;
+    }
+
+    main .site-title .btn{
+        margin: 2rem;
+        background: var(--orange-button);
+        
+    }
+
+    main .site-title .btn:hover{
+        background-color: var(--midnight);
+        /*border: 1px solid var(--white);*/
+        color: var(--white);
+    }
+
+
+    /*-----x------site title-------x------*/
+
+
+/*-----x------Main Site-------x------*/
 
 
 /*------------Viewport less than or equal to 750px--------------*/
