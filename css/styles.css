@@ -243,6 +243,24 @@ button.btn{
 
     }
 
+    section .container .owl-nav .owl-nav-prev, section .container .owl-nav .owl-nav-next{
+        color: var(--text-gray);
+        background: transparent;
+        font-size: 2rem;
+    }
+
+    /*Any class that starts with owl- ...*/
+    .owl-theme .owl-nav [class*='owl-']:hover{
+        background: transparent;
+        color: var(--lava);
+    }
+
+    .owl-theme .owl-nav [class*='owl-']{
+        outline: none;
+    }
+
+
+
     /*-----x------Videos carousel--------x-----*/
 
 
