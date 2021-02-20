@@ -200,13 +200,16 @@ button.btn{
     /*-----x------site title-------x------*/
 
     /*------------Videos carousel--------------*/
-    main .video{
-        background-image: url('../assets/Background-image-1.jpg'); /*temporal background*/
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 100vh;
+    #particles-js{
+        background: var(--white);
+        position: fixed;
+        z-index: -1;
+        left: 0px;
+        top: 0px;
         width: 100%;
+        height: 100%;    
     }
+    
     main .video h1{
         text-align: center;
     }
