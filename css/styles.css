@@ -199,6 +199,56 @@ button.btn{
 
     /*-----x------site title-------x------*/
 
+    /*-----------Education section-------------*/
+
+    main .container{
+        position: relative;
+        width: auto;
+    }
+    main .container h1{
+        text-align: center;
+
+    }
+
+    main .container .education-content {
+        display: grid;
+        grid-template-columns: 70% 30%;   
+    }
+
+    main .education-content {
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+
+    main .education-content .school-info .photo div{
+        overflow: hidden;
+    }
+
+    main .education-content .school-info .photo .img{
+        max-width: 80%;
+        transition: all 1s ease;
+    }
+    main .education-content .school-info .photo .img:hover{
+        transform: scale(1.2);
+    }
+
+    main .education-content .school-info .photo .btn{
+        position: relative;
+        left: 30%;
+        background: var(--orange-button);
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    main .education-content .school-info .location{
+        margin-top: 1rem;
+        max-width: 80%;  
+    }
+    /*-----x-----Education section------x------*/
+
+
+    /*------------Videos carousel--------------*/
+
     /*------------Videos carousel--------------*/
     #particles-js{
         background: var(--white);
