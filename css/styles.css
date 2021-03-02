@@ -13,7 +13,7 @@ html, body {
     --bg-color: #0f0f0f;
     --white: #ffffff;
     --midnight:  #104f55;
-    --lava: #fda34b;
+    --lava: #e69f59;
     
     /*gradient color*/
     /*--blue-lava: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);*/
@@ -253,11 +253,38 @@ button.btn{
         max-width: 80%;  
     }
 
+    /*-----x-----Education section------x------*/
+
+    /*----------- Sidebar -------------------*/
     main .education-content .sidebar .personal-info{
         margin-bottom: 5rem;
     } 
-    /*-----x-----Education section------x------*/
 
+    .education-content > .sidebar .interests-list{
+        font-family: var(--Josefin);
+        color: var(--white);
+    }
+    .education-content > .sidebar .interests-list .list-items a{
+        color: var(--white);
+    }
+
+    .education-content > .sidebar .interests-list .list-items{
+        background: var(--midnight);
+        padding: .8rem 1rem;
+        margin: .8rem 0;
+        border-radius: .8rem;
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+        transition: all 1s ease;
+    }
+    .education-content > .sidebar .interests-list .list-items:hover{
+        transform: scale(1.2);
+        background: var(--lava);
+        width: 70%;
+    }
+
+    /*-----x----- Sidebar ------------x------*/
 
     /*------------Videos carousel--------------*/
 
