@@ -358,9 +358,21 @@ button.btn{
 
 /*-----x------Main Site-------x------*/
 
+/*so the screen can be responsive*/
+/*------------Viewport less than or equal to 420px--------------*/
+
+@media only screen and (max-width: 420px){
+    main .container .education-content .school-info{
+        width: 80% !important;
+    }
+    .nav .toggle-collapse{
+        width: 80% !important;
+    }
+
+}
+/*----x-------Viewport less than or equal to 420px--------x-----*/
 
 /*------------Viewport less than or equal to 750px--------------*/
-/*so the screen can be responsive*/
 
 @media only screen and (max-width: 750px){
     .nav .nav-menu, .nav .nav-items{
@@ -370,7 +382,37 @@ button.btn{
     .nav .toggle-collapse{
         display: initial;
     }
+
+    main .container .education-content{
+        grid-template-columns: 100%;
+        padding-left: 3rem;
+    }
+
+    main .education-content > .sidebar .interests-list .list-items{
+        width: 60%
+    }
+    main .education-content > .sidebar .interests-list .list-items:hover{
+        width: 50%
+    }
+
+
 }
 
 /*----x-------Viewport less than or equal to 750px-------x-------*/
 
+/*------------Viewport less than or equal to 1050px--------------*/
+
+@media only screen and (max-width: 1050px){
+    main .education-content > .school-info .btn{
+        left: 15% !important;
+        bottom: 1.2rem !important;    
+    }
+
+    main .education-content .sidebar .personal-info{
+        width: 80% !important;
+    }
+
+}
+
+
+/*----x-------Viewport less than or equal to 1050px-------x-------*/

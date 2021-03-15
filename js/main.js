@@ -1,3 +1,19 @@
+responsiveCarousel = {
+    0: {
+        items: 1
+    },
+    320: {
+        items: 1
+    },
+    690: {
+        items: 2
+    },
+    1020: {
+        items: 3
+    }
+
+}
+
 $(document).ready(function(){
     
     $nav = $('.nav');
@@ -17,6 +33,7 @@ $(document).ready(function(){
         nav: true,
         dots: false,
         nav: true,
-        navText: [$('.owl-navigation .owl-nav-prev'), $('.owl-navigation .owl-nav-next')]
+        navText: [$('.owl-navigation .owl-nav-prev'), $('.owl-navigation .owl-nav-next')],
+        responsive: responsiveCarousel,
     });
 });
