@@ -37,3 +37,31 @@ $(document).ready(function(){
         responsive: responsiveCarousel,
     });
 });
+
+//Clickable School button
+$("#schoolBtn").on('click', function(){
+    $('<a href="http://fing.uach.mx/" target="_blank"></a>')[0].click();
+    //window.location = "http://fing.uach.mx/";
+
+});
+
+//Back to top button for later use
+/*
+$(document).ready(function(){
+	$(window).scroll(function () {
+			if ($(this).scrollTop() > 50) {
+				$('#btn btn-primary').fadeIn();
+			} else {
+				$('#btn btn-primary').fadeOut();
+			}
+		});
+		// scroll body to 0px on click
+		$('#btn btn-primary').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 400); //specifies the number of milliseconds it takes to scroll to the specified area
+			return false;
+		});
+});
+
+*/
