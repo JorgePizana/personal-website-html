@@ -45,7 +45,23 @@ $("#schoolBtn").on('click', function(){
 
 });
 
-//Back to top button for later use
+//Back to top button
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(50);    // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(50);   // Else fade out the arrow
+    }
+});
+$('#return-to-top').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 50); //specifies the number of milliseconds it takes to scroll to the specified area
+});
+   
+
+//Back to top button prototype
 /*
 $(document).ready(function(){
 	$(window).scroll(function () {
